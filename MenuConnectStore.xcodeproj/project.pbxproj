@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FBAAEE4A2226418407736B1 /* Pods_MenuConnectStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5626CDDBEE7B38EC0BF5B5 /* Pods_MenuConnectStore.framework */; };
 		960C2F3A1F14CBA000DF2F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C2F391F14CBA000DF2F9B /* AppDelegate.swift */; };
 		960C2F421F14CBA000DF2F9B /* MenuConnectStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 960C2F401F14CBA000DF2F9B /* MenuConnectStore.xcdatamodeld */; };
 		960C2F441F14CBA000DF2F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960C2F431F14CBA000DF2F9B /* Assets.xcassets */; };
 		960C2F471F14CBA000DF2F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960C2F451F14CBA000DF2F9B /* LaunchScreen.storyboard */; };
 		960C2F501F14FDF000DF2F9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C2F4E1F14FDF000DF2F9B /* HomeViewController.swift */; };
 		960C2F511F14FDF000DF2F9B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960C2F4F1F14FDF000DF2F9B /* HomeViewController.xib */; };
+		960C2F541F164A4900DF2F9B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960C2F521F164A4900DF2F9B /* ScanViewController.swift */; };
+		960C2F551F164A4900DF2F9B /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960C2F531F164A4900DF2F9B /* ScanViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5626CDDBEE7B38EC0BF5B5 /* Pods_MenuConnectStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuConnectStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960C2F361F14CBA000DF2F9B /* MenuConnectStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuConnectStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		960C2F391F14CBA000DF2F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960C2F411F14CBA000DF2F9B /* MenuConnectStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MenuConnectStore.xcdatamodel; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		960C2F481F14CBA000DF2F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960C2F4E1F14FDF000DF2F9B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		960C2F4F1F14FDF000DF2F9B /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		960C2F521F164A4900DF2F9B /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		960C2F531F164A4900DF2F9B /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		B8A24845BC228E8232C1CB0A /* Pods-MenuConnectStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuConnectStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuConnectStore/Pods-MenuConnectStore.release.xcconfig"; sourceTree = "<group>"; };
+		EFFCEB496A648CD5801F0F42 /* Pods-MenuConnectStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuConnectStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuConnectStore/Pods-MenuConnectStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FBAAEE4A2226418407736B1 /* Pods_MenuConnectStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03216FF7417E78902B0E4EF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5626CDDBEE7B38EC0BF5B5 /* Pods_MenuConnectStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		960C2F2D1F14CBA000DF2F9B = {
 			isa = PBXGroup;
 			children = (
 				960C2F381F14CBA000DF2F9B /* MenuConnectStore */,
 				960C2F371F14CBA000DF2F9B /* Products */,
+				B492F8FF2CDAD9DA84864030 /* Pods */,
+				03216FF7417E78902B0E4EF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,19 @@
 				960C2F401F14CBA000DF2F9B /* MenuConnectStore.xcdatamodeld */,
 				960C2F4E1F14FDF000DF2F9B /* HomeViewController.swift */,
 				960C2F4F1F14FDF000DF2F9B /* HomeViewController.xib */,
+				960C2F521F164A4900DF2F9B /* ScanViewController.swift */,
+				960C2F531F164A4900DF2F9B /* ScanViewController.xib */,
 			);
 			path = MenuConnectStore;
+			sourceTree = "<group>";
+		};
+		B492F8FF2CDAD9DA84864030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCEB496A648CD5801F0F42 /* Pods-MenuConnectStore.debug.xcconfig */,
+				B8A24845BC228E8232C1CB0A /* Pods-MenuConnectStore.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960C2F4B1F14CBA000DF2F9B /* Build configuration list for PBXNativeTarget "MenuConnectStore" */;
 			buildPhases = (
+				6B6FC7E806FEC5F2D86B527F /* [CP] Check Pods Manifest.lock */,
 				960C2F321F14CBA000DF2F9B /* Sources */,
 				960C2F331F14CBA000DF2F9B /* Frameworks */,
 				960C2F341F14CBA000DF2F9B /* Resources */,
+				C68FDAE276B219AF76A9B412 /* [CP] Embed Pods Frameworks */,
+				F76F31EDCC2DFB3CB5B586A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,10 +163,59 @@
 				960C2F471F14CBA000DF2F9B /* LaunchScreen.storyboard in Resources */,
 				960C2F441F14CBA000DF2F9B /* Assets.xcassets in Resources */,
 				960C2F511F14FDF000DF2F9B /* HomeViewController.xib in Resources */,
+				960C2F551F164A4900DF2F9B /* ScanViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B6FC7E806FEC5F2D86B527F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C68FDAE276B219AF76A9B412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuConnectStore/Pods-MenuConnectStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76F31EDCC2DFB3CB5B586A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuConnectStore/Pods-MenuConnectStore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		960C2F321F14CBA000DF2F9B /* Sources */ = {
@@ -143,6 +225,7 @@
 				960C2F421F14CBA000DF2F9B /* MenuConnectStore.xcdatamodeld in Sources */,
 				960C2F3A1F14CBA000DF2F9B /* AppDelegate.swift in Sources */,
 				960C2F501F14FDF000DF2F9B /* HomeViewController.swift in Sources */,
+				960C2F541F164A4900DF2F9B /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +338,7 @@
 		};
 		960C2F4C1F14CBA000DF2F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFCEB496A648CD5801F0F42 /* Pods-MenuConnectStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9FF53MZ89D;
@@ -268,6 +352,7 @@
 		};
 		960C2F4D1F14CBA000DF2F9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A24845BC228E8232C1CB0A /* Pods-MenuConnectStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9FF53MZ89D;
